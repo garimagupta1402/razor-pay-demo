@@ -1,4 +1,3 @@
-// utils.js
 export const loadScript = (src) => {
     return new Promise((resolve) => {
       const script = document.createElement('script');

@@ -12,11 +12,11 @@ const razorpay = new Razorpay({
 });
 
 app.post('/create-order', async (req, res) => {
-  const amount = 1000; // Replace with the actual amount
+  const amount = 100; 
   const currency = 'INR';
 
   const options = {
-    amount: amount * 100, // Amount in paise
+    amount: amount * 100, 
     currency: currency,
   };
 
@@ -29,7 +29,7 @@ app.post('/create-order', async (req, res) => {
   }
 });
 
-const PORT = 3001; // Replace with your desired port
+const PORT = 3001; 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
